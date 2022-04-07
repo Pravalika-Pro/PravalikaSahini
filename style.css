@@ -1,9 +1,9 @@
 #header {
 padding: 50px;
 align-content: center;
-background-color: lavenderblush;
+background-color: rgb(163, 218, 250);
 font-family: 'Lucida Sans';
-color: rgb(163, 218, 250);
+color: rgb(0, 68, 135);
 }
 
 #LoginSpace{
@@ -14,8 +14,18 @@ color: rgb(163, 218, 250);
 
 
 
+.BigTable{
+  margin-left: auto;
+  margin-right: auto;
+  height: 6cm;
+  padding: 30px;
+  text-align: center;
+  width: 10cm;
+  color: white;
+}
+
 .nav {
-    background-color: rgb(163, 218, 250); 
+    background-color: rgba(47, 97, 234, 0.6); 
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -27,4 +37,60 @@ color: rgb(163, 218, 250);
     display: inline-block;
     font-size: 20px;
     padding: 20px;
+  }
+
+  .bodytech {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    background-color:rgb(210, 212, 249);
+    flex: 65%;
+    padding: 15px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
   }
