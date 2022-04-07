@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to my Web App</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<ul class="nav">
+    <li><a href="WelcomePage.html">Home</a></li>
+    <li><a href="Hobbies.html">Create</a></li>
+    <li><a href="Education.html">Technology</a></li>  
+    <li><a href="Achievement.html">Our Achievements</a></li>  
+    <li><a href="Experience.html">Your Experience</a></li>   
+    <li><a href="Contact.html">Contact Us</a></li>
+    <li><a href="LoginPage.HTML" onclick="deleteAllCookies()">Logout</a></li>
+</ul>
+
+<div id="BasicContent" style="text-align: center;">
+    <table>
+        <tr class="BigTable">
+            <td style="background-color: rgba(47, 97, 234, 0.6);"> &nbsp </td>
+            <td style="background-color: rgb(232, 236, 246);"><a href="Hobbies.html">Create</a></td>
+            <td style="background-color: rgba(47, 97, 234, 0.6);"> &nbsp </td>
+        </tr>
+        <tr class="BigTable">
+            <td style="background-color: rgb(232, 236, 246);"><a href="Education.html">Technology</a></td>
+            <td style="background-color: rgba(47, 97, 234, 0.6);"> &nbsp </td>
+            <td style="background-color: rgb(232, 236, 246);"><a href="Achievement.html">Our Achievements</a></td>
+        </tr>
+        <tr class="BigTable">
+            <td style="background-color: rgba(47, 97, 234, 0.6);"> &nbsp </td>
+            <td style="background-color: rgb(232, 236, 246);"> <a href="Experience.html">Your Experience</a> </td>
+            <td style="background-color: rgba(47, 97, 234, 0.6);"> &nbsp </td>
+        </tr>
+    </table>
+</div>
+
+<div style="text-align: right;">
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Display Date and Time.</button>
+
+<p id="demo"></p>
+</div>
+</body>
+</html>
+

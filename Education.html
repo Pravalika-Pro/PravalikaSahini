@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body class="bodytech">
+        <ul class="nav">
+            <li><a href="WelcomePage.html">Home</a></li>
+            <li><a href="Hobbies.html">Create</a></li>
+            <li><a href="Education.html">Technology</a></li>  
+            <li><a href="Achievement.html">Our Achievements</a></li>  
+            <li><a href="Experience.html">Your Experience</a></li>   
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="LoginPage.HTML" onclick="deleteAllCookies()">Logout</a></li>
+        </ul>
+    
+    <h2>Technologies we use</h2>
+    <p>We have a wide range of technologies at our company</p>
+    
+    <div class="row">
+      <div class="left" style="background-color:rgba(47, 97, 234, 0.6);">
+        <h2>Menu</h2>
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <ul id="myMenu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">JAVA</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="#">SQL</a></li>
+          <li><a href="#">React.js</a></li>
+          <li><a href="#">Node.js</a></li>
+        </ul>
+      </div>
+      
+      <div class="right">
+        <h2>About the technologies we use:</h2>
+        <p>We can quickly reach the other part of the earth within hours, all thanks to advancing technology.</p>
+        <p>In addition, science and technology have enabled man to look further than our planet.</p>
+        <p>Technology is all around you: in your gaming gadgets like the Playstation, Xbox, etc. and in your mobile phones, iPads, computers, etc.</p>
+        <p>We use the latest technologiesn for our advancement and customer success.</p>
+      </div>
+    </div>
+    
+    <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+    
+    </body>
+</html>
