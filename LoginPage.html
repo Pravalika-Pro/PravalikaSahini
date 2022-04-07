@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<script src="Validation.js"></script>
+
 <div id="header" style="text-align:center;">
 <h3>Hello Folks! </h1>
 <h1>I'm Pravalika Sahini</h1>
@@ -19,7 +21,7 @@
 <br>
 <div id="LoginSpace" >
     
-	<form action="WelcomePage.html" style="text-align:center;">
+	<form action="WelcomePage.html" style="text-align:center;" onsubmit="return validateemail();">
         <table>
             <tr>
 	                <td>User Id:</td>
@@ -27,7 +29,8 @@
             </tr>
             <tr>
                 <td>Password:</td>
-	            <td><input type="password" name="password" placeholder="Enter your password"></td>
+	            <td><input id="myInput" type="password" name="password" placeholder="Enter your password"></td>
+                <td><input type="checkbox" onclick="myFunction()">Show Password</td>
             </tr>
             <tr>
 	               <td colspan="2"><input type="submit" name="login" value="Log In"></td>

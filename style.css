@@ -3,19 +3,19 @@ padding: 50px;
 align-content: center;
 background-color: lavenderblush;
 font-family: 'Lucida Sans';
-color: rgb(227, 65, 127);
+color: rgb(163, 218, 250);
 }
 
 #LoginSpace{
     align-content: center;
     padding: 50px;
-    border: 2px solid #a5026f;
+    border: 2px solid #0a5e9f;
 }
 
 
 
 .nav {
-    background-color: rgb(243, 154, 203); 
+    background-color: rgb(163, 218, 250); 
     list-style-type: none;
     text-align: center;
     margin: 0;
