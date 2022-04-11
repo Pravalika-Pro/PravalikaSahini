@@ -5,6 +5,15 @@ background-color: rgb(163, 218, 250);
 font-family: 'Lucida Sans';
 color: rgb(0, 68, 135);
 }
+*{
+  box-sizing: border-box; 
+}
+
+a{text-decoration: none;}
+
+.CursiveFont{
+  font-family: 'Gugi', cursive;
+}
 
 #LoginSpace{
     align-content: center;
@@ -12,16 +21,30 @@ color: rgb(0, 68, 135);
     border: 2px solid #0a5e9f;
 }
 
+main{
+  width: 75%; margin: 50px auto; 
+  border:1px solid grey;
+  display: grid; color: white;
+  grid-template-rows: 60px 100px 200px 60px;
+  grid-template-columns: repeat(3, 1fr) 150px;
+  grid-gap: 20px;
+ }
 
+ .div1{ background-color: #fac8cc; grid-column: 1/-1;}
+ .div2{ background-color: #c4fada; }
+ .div3{ background-color: #b4d7f9; }
+ .div4{ background-color: #ababf8; }
+ .div5{ background-color: #47484b; grid-row:2/4; grid-column: 4/5;}
+ .div6{ background-color: #f4d395; grid-column: 1/ 4;}
+ .div7{ background-color: #a4fafa; grid-column: 1/-1;}
 
-.BigTable{
+#BasicContent{
+  float: center;
   margin-left: auto;
   margin-right: auto;
-  height: 6cm;
-  padding: 30px;
+  padding: 10px;
   text-align: center;
-  width: 10cm;
-  color: white;
+  color: rgb(4, 4, 4);
 }
 
 .nav {
