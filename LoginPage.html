@@ -21,17 +21,17 @@
 <br>
 <div id="LoginSpace" >
     
-	<form action="WelcomePage.html" style="text-align:center;" onsubmit="return validateemail();">
+	<form action="WelcomePage.html" style="text-align:center;" onsubmit="return validlogin();">
         <table>
             <tr>
 	                <td>User Id:</td>
-	                <td><input type="email" name="mail_id" placeholder="Enter your email id"></td>
+	                <td><input id= "mail_id" type="email" name="mail_id" placeholder="Enter your email id"></td>
             </tr>
             <tr>
                 <td>Password:</td>
 	            <td><input id="myInput" type="password" name="password" placeholder="Enter your password"></td>
                 <td><input type="checkbox" onclick="myFunction()">Show Password</td>
-            </tr>
+            </tr> 
             <tr>
 	               <td colspan="2"><input type="submit" name="login" value="Log In"></td>
             </tr>
