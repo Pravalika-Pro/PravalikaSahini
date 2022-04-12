@@ -59,4 +59,10 @@ function myFunction()
     } else {
       x.type = "password";
     }
-  }
+}
+
+function deleteAllCookies()
+{
+  Session.Abandon();
+  Response.Cookies.Clear();
+}
