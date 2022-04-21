@@ -8,7 +8,7 @@
 function validlogin() 
 {
   var a = document.getElementById("mail_id").value;
-  var b = "pravalika@gmail.com"
+  var b = "pravalika@gmail.com" || "demo@gmail.com" || "pravalika@yahoo.com" || "helloall@outlook.com" 
   if (a==b)
   {
     //passing user and account objects:
@@ -38,18 +38,6 @@ function validlogin()
   }
 }
 
-// function validateemail()  
-// {  
-
-// var emailid 
-// var x=document.myform.email.value;  
-// var atposition=x.indexOf("@");  
-// var dotposition=x.lastIndexOf(".");  
-// if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-//   alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
-//   return false;  
-//   }  
-// }  
 
 function myFunction() 
 {
@@ -66,3 +54,25 @@ function deleteAllCookies()
   Session.Abandon();
   Response.Cookies.Clear();
 }
+
+function openRadio()
+{
+  document.getElementById("container-3-radio-buttons-choice").style.cssText = 'display : block';
+}
+
+// function Create()
+//       {
+//         if(name == "one"){
+//         console.log("Choice: ", name);
+//             document.getElementById("one-variable-equations").checked = true;
+//             document.getElementById("multiple-variable-equations").checked = false;
+        
+//         } else if (name == "multiple")
+//         {
+//             console.log("Choice: ", name);
+//             document.getElementById("multiple-variable-equations").checked = true;
+//             document.getElementById("one-variable-equations").checked = false;
+
+//         }
+
+//       }

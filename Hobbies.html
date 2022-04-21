@@ -2,9 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Welcome to my Web App</title>
+    <title>Create</title>
     <style>
-
     </style>
 </head>
 
@@ -20,11 +19,13 @@
     <li><a href="LoginPage.HTML" onclick="deleteAllCookies()">Logout</a></li>
 </ul>
 
-<div style="text-align: right;">
-<button type="button"
+<!-- <div style="text-align: right;"> -->
+<!-- <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
 Display Date and Time.</button>
-</div>
+</div> -->
+
+<div style="height: 100px; width: 600 px; margin: 15px;">
 <p>
     What is Lorem Ipsum?
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -33,6 +34,40 @@ Display Date and Time.</button>
       It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
       and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
+</div>
+
+<div class="divCreation">
+    <button class="creation" id="Create" onclick="openRadio()">
+      <span>+Create</span>
+      
+    </button>
+
+    <button class="creation" id="Create" onclick="Create()">
+      <span>+Create</span>
+    </button>
+  </div>
+
+  <div>
+    <button class="creation" id="Create" onclick="Create()">
+      <span>+Create</span>
+    </button>
+   </div>
+
+   <div>
+    <button class="creation" id="Create" onclick="Create()">
+      <span>+Create</span>
+    </button>
+
+    <button class="creation" id="Create" onclick="Create()">
+      <span>+Create</span> <br> <br><br><br> <br>
+      <!-- <div class="radio-buttons-choice" id="container-3-radio-buttons-choice" style="display: none;">
+        <input type="radio" id="WelcomePage" name="variables" onclick="Create(name)"><label>WelcomePage</label><br>
+        <input type="radio" id="Experience" name="variables"  onclick="Create(name)"><label>Experience</label>
+        <input type="radio" id="Contacts" name="variables"  onclick="Create(name)"><label>Contacts</label>
+      </div>
+    </button> -->
+
+  </div>
 
 </body>
 </html>
