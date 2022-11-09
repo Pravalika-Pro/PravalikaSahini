@@ -9,7 +9,7 @@ function validlogin()
 {
   var a = document.getElementById("mail_id").value;
   var b = "pravalika@gmail.com" || "demo@gmail.com" || "spravalika@yahoo.com" || "helloall@outlook.com" || "staging.pravalika@gmail.com"
-  if (a=="pravalika@gmail.com")
+  if (a=="pravalika@gmail.com" || "staging.pravalika@gmail.com")
   {
     //passing user and account objects:
     aptrinsic("identify",
