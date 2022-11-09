@@ -3,12 +3,12 @@
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-CYLRDPNTFF8V-2");
+})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-CYLRDPNTFF8V-2-2");
 
 function validlogin() 
 {
   var a = document.getElementById("mail_id").value;
-  var b = "pravalika@gmail.com" || "demo@gmail.com" || "spravalika@yahoo.com" || "helloall@outlook.com" 
+  var b = "pravalika@gmail.com" || "demo@gmail.com" || "spravalika@yahoo.com" || "helloall@outlook.com" || "staging.pravalika@gmail.com"
   if (a=="pravalika@gmail.com")
   {
     //passing user and account objects:
