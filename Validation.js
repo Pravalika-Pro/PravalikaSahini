@@ -55,6 +55,29 @@ function validlogin()
 });
     location.replace("WelcomePage.html");
   }
+  else if (a!=b)
+  {
+      //passing user and account objects:
+    aptrinsic("identify",
+    {
+    //User Fields
+    "id": "PX:"+a, // Required for logged in app users
+    "email": a,
+    "firstName": a.slice(0,4),
+    "lastName": "Yahoo",
+    "signUpDate": 1522697426479, //unix time in ms
+    "plan" : "Premium", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
+    "price" : 120.8,
+    "userHash": "" // optional transient for HMAC identification
+    },
+{
+//Account Fields
+  "id":"Amazon123", //Required
+  "name":"Amazon Global Services",
+  "Program": "Diamond" // flat custom attributes
+});
+    location.replace("WelcomePage.html");
+  }
   else 
   {
     alert ("Invalid Credentials!");
@@ -74,8 +97,7 @@ function myFunction()
 
 function deleteAllCookies()
 {
-  Session.Abandon();
-  Response.Cookies.Clear();
+  aptrinsic('reset');
 }
 
 function allowlogin(mail_id) 
