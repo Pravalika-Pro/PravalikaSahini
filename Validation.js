@@ -5,10 +5,6 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-CYLRDPNTFF8V-2");
 
-aptrinsic('addListener', 'kcTriggered', () => {
-  aptrinsic('kcb','open');
-});
-
 
 function openMyKcb()
 {
