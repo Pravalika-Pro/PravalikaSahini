@@ -13,13 +13,14 @@
         border: 1px outset black;  
         text-align: center;
       }
-    #draggreen { width: 150px; height: 150px; padding: 0.5em; }
-    #dragred { width: 150px; height: 150px; padding: 0.5em; }
-    #dragpink { width: 150px; height: 150px; padding: 0.5em; }
+    #draggreen { position: absolute; z-index: 9; background-color: #f1f1f1; text-align: center; border: 1px solid #d3d3d3; width: 150px; height: 150px; padding: 0.5em; }
+    #dragred { position: absolute; z-index: 9; background-color: #f1f1f1; text-align: center; border: 1px solid #d3d3d3; width: 150px; height: 150px; padding: 0.5em; }
+    #dragpink { position: absolute; z-index: 9; background-color: #f1f1f1; text-align: center; border: 1px solid #d3d3d3; width: 150px; height: 150px; padding: 0.5em; }
+
     </style>
 </head>
 
-<body>
+<body style="cursor: auto;">
     <script src="Validation.js"></script>
 <ul class="nav">
     <li><a href="WelcomePage.html">Home</a></li>
@@ -74,31 +75,45 @@ Display Date and Time.</button>
 </div>
 <div></div>
 <div>Click below to create anything</div>
+<table>
+    <tr>
+        
 <div class="divCreation">
+    <td>
     <button class="creation" id="Create" onclick="openRadio()">
       <span lass="divCreation">+Create</span>
     </button>
-
+    </td>
+    <td>
     <button class="creation" id="Create" onclick="Create()">
       <span lass="divCreation">+Create</span>
     </button>
+    </td>
   </div>
-
+    </tr>
+    <tr>
   <div class="divCreation">
-
-  <div class="divCreation">
+      <td>
     <button class="creation" id="Create" onclick="Create()">
       <span>+Create</span>
     </button>
+      </td>
    </div>
-
+    </tr>
+    <tr>
    <div class="divCreation">
+       <td>
     <button class="creation" id="Create" onclick="Create()">
       <span>+Create</span>
     </button>
-
+    </td>
+        <td>
     <button class="creation" id="Create" onclick="Create()">
-      <span>+Create</span> </button><br> 
+      <span>+Create</span> 
+    </button>
+            </td>
+       </tr>
+       <br> 
       <!---- <div class="radio-buttons-choice" id="container-3-radio-buttons-choice" style="display: none;">
         <input type="radio" id="WelcomePage" name="variables" onclick="Create(name)"><label>WelcomePage</label><br>
         <input type="radio" id="Experience" name="variables"  onclick="Create(name)"><label>Experience</label>
