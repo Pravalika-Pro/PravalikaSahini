@@ -11,6 +11,28 @@ function openMyKcb()
   aptrinsic('kcb','open');
 }
 
+$( function() {
+      $( "#dragred").draggable({
+            stop : function r() {aptrinsic('track','dragColor',{"name":"red drag", "count" : 30});}
+            
+        })
+      } );
+    
+    $( function() {
+        $( "#draggreen").draggable({
+            stop : function b() {aptrinsic('track','dragColor',{"name":"drag green name", "count" : 60});}
+            
+        })
+      } );
+    
+      $( function() {
+        $( "#dragpink").draggable({
+          stop : function b() {aptrinsic('track','dragColor',{"Name":"drag Pink name","demo":"no" ,"count" : 100,"name":"testing"});}
+            
+        })
+} );
+
+
 function validlogin() 
 {
   var a = document.getElementById("mail_id").value;
