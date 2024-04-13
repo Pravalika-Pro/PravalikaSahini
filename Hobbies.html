@@ -73,12 +73,12 @@ Display Date and Time.</button>
       </form>
 
 </div>
-<div></div>
 <div>Click below to create anything</div>
 <table>
-    <tr>
-        
-<div class="divCreation">
+    
+    
+    <tr>        
+    <div class="divCreation">
     <td>
     <button class="creation" id="Create" onclick="openRadio()">
       <span lass="divCreation">+Create</span>
@@ -107,33 +107,24 @@ Display Date and Time.</button>
       <span>+Create</span>
     </button>
     </td>
+   </div>
         <td>
     <button class="creation" id="Create" onclick="Create()">
       <span>+Create</span> 
     </button>
-            </td>
+        </td>
        </tr>
        <br> 
-      <!---- <div class="radio-buttons-choice" id="container-3-radio-buttons-choice" style="display: none;">
-        <input type="radio" id="WelcomePage" name="variables" onclick="Create(name)"><label>WelcomePage</label><br>
-        <input type="radio" id="Experience" name="variables"  onclick="Create(name)"><label>Experience</label>
-        <input type="radio" id="Contacts" name="variables"  onclick="Create(name)"><label>Contacts</label>
-      </div>-->
     <div>
-        <div id="draggreen" class="ui-widget-content ui-draggable ui-draggable-handle" style="background-color: green; position: relative;">
+        <div id="draggreen" class="ui-widget-content ui-draggable ui-draggable-handle" onclick=dragElement(document.getElementById("draggreen"); style="background-color: green; position: relative;">
             <p>Drag me around - Green</p>
         </div>
-        <div id="dragred" class="ui-widget-content ui-draggable ui-draggable-handle" style="background-color: red; position: relative;">
+        <div id="dragred" class="ui-widget-content ui-draggable ui-draggable-handle" onclick=dragElement(document.getElementById("draggred"); style="background-color: red; position: relative;">
             <p>Drag me around  - Red</p>
         </div>
-        <div id="dragpink" class="ui-widget-content ui-draggable ui-draggable-handle" style="background-color: pink; position: relative; left: 309px; top: -73px;">
+        <div id="dragpink" class="ui-widget-content ui-draggable ui-draggable-handle" onclick=dragElement(document.getElementById("dragpink"); style="background-color: pink; position: relative; left: 309px; top: -73px;">
             <p>Drag me around - Pink</p>
         </div>
     </div>
-       
-    </button>
-  </div>
-  </div>
-
 </body>
 </html>
