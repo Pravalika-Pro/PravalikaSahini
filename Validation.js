@@ -1,19 +1,30 @@
-
-(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-      var config = {
-  kcAllowedFuncNames: ["disableKCB"]
-};
+(function(n,t,a,e,co){
+  var i="aptrinsic";
+  n[i]=n[i]||function(){
+    (n[i].q=n[i].q||[]).push(arguments)
+  },
+  n[i].p=e;
+  // Add config here
+  var config = {
+    kcAllowedFuncNames: ["disableKCB"]
+  };
+  n[i].c = config;
+  var r=t.createElement("script");
+  r.async=!0;
+  r.src=a+"?a="+e;
+  var c=t.getElementsByTagName("script")[0];
+  c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-CYLRDPNTFF8V-2");
 
 function disableKCB() {
+  console.log("Disable KCB clicked");
+
   aptrinsic('kcb', 'close');
-  
+
   setTimeout(function() {
+    console.log("Attempting to hide KCB");
     aptrinsic('kcb', 'hide');
-  }, 300);
+  }, 500);
 }
 
 
@@ -22,10 +33,12 @@ function openMyKcb()
   aptrinsic('kcb','open');
 }
 
+/* commented
 //Make the DIV element draggagle:
 dragElement(document.getElementById("draggreen"));
 dragElement(document.getElementById("dragred"));
 dragElement(document.getElementById("dragpink"));
+*/
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
