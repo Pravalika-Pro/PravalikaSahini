@@ -9,7 +9,11 @@
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-CYLRDPNTFF8V-2");
 
 function disableKCB() {
-  aptrinsic('kcb', 'hide');
+  aptrinsic('kcb', 'close');
+  
+  setTimeout(function() {
+    aptrinsic('kcb', 'hide');
+  }, 300);
 }
 
 
