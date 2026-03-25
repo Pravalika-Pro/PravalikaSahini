@@ -25,6 +25,7 @@ function disableKCB() {
     console.log("Attempting to hide KCB");
     aptrinsic('kcb', 'hide');
   }, 500);
+  console.log("KCB Hidden");
 }
 
 
